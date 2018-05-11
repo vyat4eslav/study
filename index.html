@@ -2,16 +2,176 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="styles.css">
+		<!--<link rel="stylesheet" href="styles.css"-->
 		<title>Yeah My first try</title>
 	</head>
 
 	<body>
-		<header></header>
-			<h1>Your Name is</h1>
-		<input type="text" name="sss">
-		<footer>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/index-logo.svg" width="368" height="153" alt="Logo of he shop">
+				</a>
+				<ul class="site-navgation">
+					<li><a href="info.html">Information</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="price.html">Price</a></li>
+					<li><a href="catalog.html">Shop</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="login-link">Sign in</li>
+				</ul>
+			</nav>
+			
+		</header>
+		<main class="container">
+
+			<h1 class="visually-hidden">Pupper Shop</h1>
+
+			<section class="features">
+				<h2 class="visually-hidden">Features</h2>
+				<ul class="features-list">
+					<li class="feature-item">
+						<h3>Fast</h3>
+						<p>We realy do fast</p>
+					</li>
+					<li class="feature-item">
+						<h3>Cool</h3>
+						<p>Yeah baby</p>
+					</li>
+					<li class="feature-item">
+						<h3>Expensive</h3>
+						<p>Do you have money?</p>
+					</li>
+				</ul>				
+			</section>
+
+			<section class="news">
+				<h2>News</h2>
+				<ul class="news-list">
+					<li class="news-item">
+						<p>We open this page and have fun</p>
+						<time datetime="2018-01-18">18 january</time>
+					</li>
+					<li class="news-item">
+						<p>Sorry we close</p>
+						<time datetime="2018-03-12">12 March</time>
+					</li>
+				</ul>
+				<a class="button" href="news.html">All news</a>
+				
+			</section>
+
+			<section class="gallery">
+				<h2>Photogal</h2>
+				<figure class="gallery-content">
+					<a href="#"><img src="img/shop.jpg" width="268" height="164" alt="Shop">
+					</a>
+				<span class="button gallery-button gallery-button-back">Back</span>
+				<span class="button gallery-button gallery-button-next">Next</span>
+				</figure>
+			</section>
+			
+			<section class="contacts">
+				<h2>Contacts</h2>
+				<p>
+					Butova Pr<br>
+					dd 55 77
+				</p>
+				<p>
+					Time<br>
+					md-fr c 10:00 22:00<br>
+					st-sd  8-9
+				</p>
+				<a class="button contacts-button" href="map.html">How to reach us</a>
+				<a class="button contacts-button" href="contacts.html">Feedback</a>
+
+
+			</section>
+
+			<section class="appointment">
+				<h2>Make a deal</h2>
+				<p class="appointment-info">
+					Set what you want
+				</p>
+				<form class="appointment-form" accept="https://echo.htmlacademy.ru" method="post">
+					<p class="appointment-item">
+						Date
+					<input type="text" name="date" value="" placeholder="10.05.2018">
+				</p>
+					<p class="appointment-item">
+						Time
+					<input type="text" name="time" value="" placeholder="10:00">
+				</p>	
+					<p class="appointment-item">
+						Name
+					<input type="text" name="name" value="" placeholder="Vasya">
+				</p>
+					<p class="appointment-item">
+						Phone
+					<input type="tel" name="phone" value="" placeholder="+8 123 54 23">
+				</p>
+					<button class="button" type="submit">Send</button>
+				</form>
+			</section>
+
+		</main>
+		<footer class="main-footer">
+			<p class="footer-contacts">
+				
+					Butova Pr<br>
+					dd 55 77
+					<a href="map.html">How to reach us</a><br>
+					8 900 222 222
+				</p>
+			<div class="footer-social">
+			<b>Lets make love</b>
+			<ul>
+			<li><a class="social-button" href="#">VK</a></li>
+			<li><a class="social-button" href="#">Face</a></li>
+			<li><a class="social-button" href="#">Insta</a></li>
+		</ul>
+		</div>
+
+		<p class="footer-copyright">
+			<b>Was made by</b>
+			<a class="button" href="https://ya.ru">Yaru</a>
+		</p>
+
 		</footer>
+
+		<section class="modal modal-login">
+			<h2>Personal Jesus</h2>
+			<p>Enter you lg ppwd</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+						<input class="login-icon-user" type="text" name="login" placeholder="login">
+				</p>
+				<p>
+					<input class="login-icon-pasword" type="text" name="password" placeholder="password">
+				</p>
+				<p class="login-password-info">
+				<input type="checkbox" name="remember" class="visually-hidden">
+				Remeber me
+				<a class="restore" href="#">I forgot</a>
+			</p>
+			<button class="button" type="submit">Sign in
+				
+			</button>
+
+			</form>
+			<span class="modal-close">X</span>
+		</section>
+
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">How to get us</h2>
+			<span class="modal-close">X</span>
+			
+
+		</section>
+
+
 	</body>
 	
 </html>
